@@ -15,7 +15,7 @@ EOF
 mkdir -p /etc/docker/certs.d/${HOST}
 
 # Retrieve certificate from host and place in docker cert location.
-openssl s_client -showcerts -connect ${HOST}:$PORT < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > /etc/docker/certs.d/${HOST}/ca.crt
+openssl s_client -showcerts -connect ${HOST}:$PORT < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > /etc/docker/certs.d/${CL_HOST}/ca.crt
 
 # Stop CodeLogic.
 systemctl stop codelogic
