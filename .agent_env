@@ -1,0 +1,12 @@
+# Host name for CodeLogic.
+export CODELOGIC_HOST="https://cltemp.us-central1-a.c.true-poet-394014.internal"
+  
+# CodeLogic port.
+export PORT="443"
+
+# Agent UUID, this is generated during agent creation.
+export AGENT_UUID="ec68b22-9211-4c3b-9b98-865bd9d69e62"
+
+# Agent password, this is generated during agent creation.
+export AGENT_PASSWORD="yOD62GeX2m7voYoD"
+
