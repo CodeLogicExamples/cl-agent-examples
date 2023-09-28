@@ -6,6 +6,8 @@
 LOCAL_DIR=`pwd`
 CERT_DIR="${LOCAL_DIR}/certs"
 
+# analyze -a DNN -c jdbc:sqlserver://192.168.0.63;databaseName=dnn;trustServerCertificate=false;encrypt=false -u SA -pwd Stup!dE@sy --expunge-scan-sessions
+# Must modify $CL_SQLCMD to reflect the proper connection strinng as shown above.  Need databaseName=
 CL_SQLCMD="analyze -a ${DB_APPNAME} -c jdbc:${DB_TYPE}://${DB_HOST}:${DB_PORT}/${DB_NAME};${DB_XTRA} -u ${DB_USER} -pwd ${DB_PASS} --expunge-scan-sessions"
 echo ${CL_SQLCMD}
 
