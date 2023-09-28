@@ -2,7 +2,7 @@
 # CodeLogic server parameters.
 #########################################
 # Host name for CodeLogic.
-CODELOGIC_HOST="cltemp.us-central1-a.c.true-poet-394014.internal"
+CL_HOST="cltemp.us-central1-a.c.true-poet-394014.internal"
 # Server protocol.  Can be http, or https(recommended)
 PROTOCOL="https"
 # CodeLogic port. If https 443(recommended), if http 80.
