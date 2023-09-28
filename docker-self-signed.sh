@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
-# CodeLogic host for registry access.
-HOST="<YOUR_CODELOGIC_HOST>"
-# CodeLogic port for registry access.
-PORT="443"
+# Source in agent environment variables.
+[ ! -f .env ] || export $(grep -v '^#' .agent_env | xargs)
 
 # Remove original daemon.json
 rm -f /etc/docker/daemon.json
