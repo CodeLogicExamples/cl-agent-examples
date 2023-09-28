@@ -12,7 +12,7 @@ PORT="443"
 # CodeLogic docker sql agent  parameters.
 #########################################
 # Agent UUID, this is generated during agent creation.
-DB_AGENT_UUID="ec68b22-9211-4c3b-9b98-865bd9d69e62"
+DB_AGENT_UUID="5129459c-d9dd-4e1b-8c23-c6c5e60161d3"
 # Agent password, this is generated during agent creation.
 DB_AGENT_PASSWORD="yOD62GeX2m7voYoD"
 # Application name.  What application is this database related to. Databases can be a standalone object(Recommended if shared).  
