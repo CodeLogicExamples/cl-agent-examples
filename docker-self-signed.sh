@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Source in agent environment variables.
-[ ! -f .env ] || export $(grep -v '^#' .agent_env | xargs)
+[ ! -f .agent_env ] || export $(grep -v '^#' .agent_env | xargs)
 
 # Remove original daemon.json
 rm -f /etc/docker/daemon.json
