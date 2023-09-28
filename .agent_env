@@ -1,12 +1,33 @@
+#########################################
+# CodeLogic server parameters.
+#########################################
 # Host name for CodeLogic.
-export CODELOGIC_HOST="https://cltemp.us-central1-a.c.true-poet-394014.internal"
-  
-# CodeLogic port.
-export PORT="443"
+CODELOGIC_HOST="cltemp.us-central1-a.c.true-poet-394014.internal"
+# Server protocol.  Can be http, or https(recommended)
+PROTOCOL="https"
+# CodeLogic port. If https 443(recommeded), if http 80.
+PORT="443"
 
+#########################################
+# CodeLogic docker sql agent  parameters.
+#########################################
 # Agent UUID, this is generated during agent creation.
-export AGENT_UUID="ec68b22-9211-4c3b-9b98-865bd9d69e62"
-
+DB_AGENT_UUID="ec68b22-9211-4c3b-9b98-865bd9d69e62"
 # Agent password, this is generated during agent creation.
-export AGENT_PASSWORD="yOD62GeX2m7voYoD"
-
+DB_AGENT_PASSWORD="yOD62GeX2m7voYoD"
+# Application name.  What application is this database related to. Databases can be a standalone object(Recommended if shared).  
+DB_APPNAME="DNN"
+# Type of database.  Can be oracle, db2, sqlserver, postgres, etc.
+DB_TYPE="sqlserver"
+# Host name of the database.
+DB_HOST="192.168.0.63"
+# Port the databse listens on. Not needed if listening on default port.  If port is not the default, the connection string in the docker-sql.sh script will need to be modified.
+#DB_PORT=""
+# Database name.
+DB_NAME="dnn"
+# Database user name.
+DB_USER="SA"
+# Database password.
+DB_PASS="Stup!dE@sy"
+# Extra JDBC parameters.
+DB_XTRA="trustServerCertificate=false;encrypt=false"
