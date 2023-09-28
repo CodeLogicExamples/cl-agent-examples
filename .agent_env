@@ -5,7 +5,7 @@
 CODELOGIC_HOST="cltemp.us-central1-a.c.true-poet-394014.internal"
 # Server protocol.  Can be http, or https(recommended)
 PROTOCOL="https"
-# CodeLogic port. If https 443(recommeded), if http 80.
+# CodeLogic port. If https 443(recommended), if http 80.
 PORT="443"
 
 #########################################
@@ -21,7 +21,7 @@ DB_APPNAME="DNN"
 DB_TYPE="sqlserver"
 # Host name of the database.
 DB_HOST="192.168.0.63"
-# Port the databse listens on. Not needed if listening on default port.  If port is not the default, the connection string in the docker-sql.sh script will need to be modified.
+# Port the database listens on. Not needed if listening on the default port.  If port is not the default, the connection string in the docker-sql.sh script will need to be modified.
 #DB_PORT=""
 # Database name.
 DB_NAME="dnn"
