@@ -12,10 +12,10 @@ cat << EOF > /etc/docker/daemon.json
 EOF
 
 # Make directory reflecting host exposing self-signed cert.
-mkdir -p /etc/docker/certs.d/${HOST}
+mkdir -p /etc/docker/certs.d/${CL_HOST}
 
 # Retrieve certificate from host and place in docker cert location.
-openssl s_client -showcerts -connect ${HOST}:$PORT < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > /etc/docker/certs.d/${CL_HOST}/ca.crt
+openssl s_client -showcerts -connect ${CL_HOST}:$PORT < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > /etc/docker/certs.d/${CL_HOST}/ca.crt
 
 # Stop CodeLogic.
 systemctl stop codelogic
