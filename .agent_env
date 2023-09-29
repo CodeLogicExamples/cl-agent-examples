@@ -2,8 +2,7 @@
 # CodeLogic server parameters.
 #########################################
 # Host name for CodeLogic.
-#CL_HOST="cltemp.us-central1-a.c.true-poet-394014.internal"
-CL_HOST="34.121.40.85"
+CL_HOST="<YOUR_CODELOGIC_HOST>"
 # Server protocol.  Can be http, or https(recommended)
 PROTOCOL="https"
 # CodeLogic port. If https 443(recommended), if http 80.
@@ -13,22 +12,22 @@ PORT="443"
 # CodeLogic docker sql agent  parameters.
 #########################################
 # Agent UUID, this is generated during agent creation.
-DB_AGENT_UUID="5129459c-d9dd-4e1b-8c23-c6c5e60161d3"
+DB_AGENT_UUID="<AGENT_UUID>"
 # Agent password, this is generated during agent creation.
-DB_AGENT_PASSWORD="yOD62GeX2m7voYoD"
+DB_AGENT_PASSWORD="<AGENT_PASSWORD>"
 # Application name.  What application is this database related to. Databases can be a standalone object(Recommended if shared).  
-DB_APPNAME="DNN"
-# Type of database.  Can be oracle, db2, sqlserver, postgres, etc.
+DB_APPNAME="<YOUR_DATABASE_NAME>"
+# Type of database.  Can be oracle, db2, sqlserver, postgres, etc. *Only tested on sqlserver at the moment. Will most likely have seperate scripts/.env files for each.
 DB_TYPE="sqlserver"
 # Host name of the database.
-DB_HOST="192.168.0.63"
-# Port the database listens on. Not needed if listening on the default port.  If port is not the default, the connection string in the docker-sql.sh script will need to be modified.
+DB_HOST="<YOUR_DATABASE_HOST>"
+# Port the database listens on. Not needed if listening on the default port.  If port is not the default, the connection string in the docker-sqlserver.sh script will need to be modified.
 #DB_PORT=""
 # Database name.
-DB_NAME="dnn"
+DB_NAME="<YOUR_DATABASE_NAME>"
 # Database user name.
-DB_USER="SA"
+DB_USER="<YOUR_DATABASE_USER>"
 # Database password.
-DB_PASS="Stup!dE@sy"
-# Extra JDBC parameters.
-DB_XTRA="trustServerCertificate=false;encrypt=false"
+DB_PASS="<YOUR_DATABASE_PASSWORD>"
+# Extra JDBC parameters. Example: DB_XTRA="trustServerCertificate=false;encrypt=false"
+DB_XTRA="<YOUR_EXTRA_DB_PARAMETERS>"
