@@ -4,9 +4,9 @@
 # Host name for CodeLogic.
 CL_HOST="<YOUR_CODELOGIC_HOST>"
 # Server protocol.  Can be http, or https(recommended)
-PROTOCOL="https"
+CL_PROTOCOL="https"
 # CodeLogic port. If https 443(recommended), if http 80.
-PORT="443"
+CL_PORT="443"
 
 #########################################
 # CodeLogic docker sql agent  parameters.
