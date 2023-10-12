@@ -4,9 +4,9 @@
 # Host name for CodeLogic.
 CL_HOST="<YOUR_CODELOGIC_HOST>"
 # Server protocol.  Can be http, or https(recommended)
-PROTOCOL="https"
+CL_PROTOCOL="https"
 # CodeLogic port. If https 443(recommended), if http 80.
-PORT="443"
+CL_PORT="443"
 
 #########################################
 # CodeLogic docker dotnet agent parameters.
@@ -15,8 +15,12 @@ PORT="443"
 DOTNET_AGENT_UUID="<AGENT_UUID>"
 # Agent password, this is generated during agent creation.
 DOTNET_AGENT_PASSWORD="<AGENT_PASSWORD>"
+# Path to certificate.
+CL_CERT_PATH=""
 # Application name.  What is the name of the application. Databases can be a standalone object(Recommended if shared).  
 DOTNET_APPNAME="<YOUR_APPLICATION_NAME>"
 # JDBC String(s).  Multiple specification. Optional.
 JDBC_STRING="<YOUR_JDBC_STRING>"
+# Path to dotnet binaries, .dll(s)
+DOTNET_BINARY_PATH=""
 
