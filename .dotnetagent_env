@@ -20,7 +20,11 @@ CL_CERT_PATH=""
 # Application name.  What is the name of the application. Databases can be a standalone object(Recommended if shared).  
 DOTNET_APPNAME="<YOUR_APPLICATION_NAME>"
 # JDBC String(s).  Multiple specification. Optional.
-JDBC_STRING="<YOUR_JDBC_STRING>"
+JDBC_STRING="<YOUR_JDBC_STRING(S)>"
 # Path to dotnet binaries, .dll(s)
 DOTNET_BINARY_PATH=""
+# Filter pattern for dll(s) to scan.
+DOTNET_DLL_FILTER=""
+# Filter for method --> method relationships.
+DOTNET_METHOD_FILTER=""
 
