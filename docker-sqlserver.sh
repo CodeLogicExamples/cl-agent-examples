@@ -14,7 +14,7 @@ echo ${CL_SQLCMD}
 # Run scan with the configured values in .agent_env file.
 docker run --pull always --rm --network host --interactive --tty \
      --volume "${CERT_DIR}/cacerts:/usr/local/openjdk-11/lib/security/cacerts:ro" \
-     --env CODELOGIC_HOST="${PROTOCOL}://${CL_HOST}:${PORT}" \
+     --env CODELOGIC_HOST="${PROTOCOL}://${CL_HOST}:${CL_PORT}" \
      --env AGENT_UUID=${DB_AGENT_UUID} \
      --env AGENT_PASSWORD=${DB_AGENT_PASSWORD} \
      ${CL_HOST}/codelogic_sql:latest #\
