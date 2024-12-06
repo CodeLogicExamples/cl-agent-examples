@@ -1,7 +1,8 @@
+# Oracle example:
 docker run --pull always --rm --interactive --tty \
-     --env CODELOGIC_HOST="http://192.168.0.3:80" \
-     --env AGENT_UUID="2b1fd85d-b1ff-448c-bf4f-5d0536fa6b9a" \
-     --env AGENT_PASSWORD="6L1sBYSN1qf5oadF" \
-     --volume "/opt/ofbiz-oracle-docker/ofbiz-output:/scan" \
-     192.168.0.3:80/codelogic_java:latest \
-     analyze --application "ofbiz-framework" --path /scan --database "jdbc:oracle:thin:@192.168.0.4:1521/ofbiz"
+     --env CODELOGIC_HOST="http://<CODELOGIC_HOST>" \
+     --env AGENT_UUID="<CODELOGIC_AGENT_UUID>" \
+     --env AGENT_PASSWORD="<CODELOGIC_AGENT_PASSWORD>" \
+     --volume "/path/to/artifacts:/scan" \
+     <CODELOGIC_HOST>/codelogic_java:latest \
+     analyze --application "<YOUR_APPLICATION_NAME>" --path /scan --database "jdbc:oracle:thin:@<DATABASE_HOST>:1521/<DATABASE_NAME>"  # You may have to add the --rescan flag if the same artifact has already been scanned. 
